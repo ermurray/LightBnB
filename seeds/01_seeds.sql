@@ -1,0 +1,11 @@
+INSERT INTO users (name, email, password)
+VALUES ('Germaine Castillo','amet@erategetipsum.net','$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'), ('May Jackson','Proin.ultrices.Duis@sodalesat.co.uk','$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'), ('Ivor Foley','sed.libero@Duis.net','$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
+
+INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active)
+VALUES (1,'redefine ubiquitous portals', 'Description',  'https://images.unsplash.com/photo-1614595737683-1740e41bfaac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1276&q=80', 'https://images.unsplash.com/photo-1614595737683-1740e41bfaac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1276&q=80', 1000, 3, 4, 5, 'Canada', 'this street', 'that city', 'Alberta', 't3x 0d3', TRUE), (2,'synergize rich technologies', 'Description',  'https://images.unsplash.com/photo-1596125861329-8ca341a1ab3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80', 'https://images.unsplash.com/photo-1596125861329-8ca341a1ab3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80', 500, 3, 4, 5, 'Canada', 'that street', 'that city', 'Manitoba', 't3z 0d3', TRUE), (3,'	syndicate value-added methodologies', 'Description',  'https://images.unsplash.com/photo-1614505155911-607077d15932?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80', 'https://unsplash.com/photos/JeFfOPjkN_Q', 300, 3, 4, 5, 'Canada', 'this street', 'that city', 'British Columbia', 't3x 0x3', TRUE);
+
+INSERT INTO reservations (start_date, end_date, property_id, guest_id)
+VALUES ('2018-09-11', '2018-09-26', 2, 3), ('2019-01-04', '2018-09-26', 2, 2), ('2021-10-01', '2021-10-14', 1, 1);
+
+INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
+VALUES (3, 2, 1, 5, 'messages'), (2, 2, 2, 4, 'messages'), (1, 1, 3, 1, 'messages');
